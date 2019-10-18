@@ -17686,3 +17686,54 @@ body {
   color: #fd5068;
 }
 
+.signinPage {
+  margin-top: 10vh;
+}
+
+.signinPage .title {
+  color: #fd5068;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.signinPage .userIcon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #fd5068;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.signinPage .loginBtn {
+  padding: 12px;
+  width: 200px;
+  border-radius: 21px;
+  background: #fd5068;
+  color: #fff;
+  text-align: center;
+  border: none;
+  margin-top: 20px;
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+  cursor: pointer;
+}
+
+.signinPage .loginBtn:hover {
+  opacity: .7;
+}
+
+.signinPage .errorMessage {
+  color: #fd5068;
+}
+
