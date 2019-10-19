@@ -12,6 +12,8 @@
 */
 Route::group(['prefix' => 'users', 'middleware' => 'auth'], function () {
     Route::get('show/{id}', 'UsersController@show')->name('users.show');
+    Route::get('edit/{id}', 'UsersController@edit')->name('users.edit');
+    Route::post('update/{id}', 'UsersController@update')->name('users.update');
 });
 
 Route::get('/', function () {

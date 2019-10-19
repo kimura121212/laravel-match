@@ -6,7 +6,7 @@
   <div class='container'>
     <header class="header">
       <p class='header_logo'>
-      <a href="{{ route('users.show', ['id' => $user['id']]) }}">
+      <a href="{{ route('home') }}">
       <img src="/storage/images/techpit-match-icon.png">
       </a>
       </p>
@@ -21,8 +21,11 @@
     
       <div class='userAction'>
         <div class="userAction_edit userAction_common">
-          <i class="fas fa-edit fa-2x"></i>
+          
+          <a href="/users/edit/{{$user->id}}"><i class="fas fa-edit fa-2x"></i></a>
+          
           <span>情報を編集</span>
+          
         </div>
         <div class='userAction_logout userAction_common'>
         <a href="{{ route('logout') }}" onclick="event.preventDefault();
