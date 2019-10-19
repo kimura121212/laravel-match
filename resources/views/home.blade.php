@@ -28,5 +28,8 @@
       <a href="#" class="like"><i class="fas fa-heart fa-2x"></i></a>
   </div>
 </div>
-
+<script>
+  var usersNum = {{ $userCount }};
+  var from_user_id = {{ $from_user_id }};
+</script>
 @endsection
